@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.percentageloader.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var $loader;
+	var total = 100;
+	var curval  = 80 ;
+	var kb = 0;
+	$loader  = $("#loader").percentageLoader({
+		width : 400, 
+		height : 400, 
+		progress : 0
+	});
+	
+	var animateFunc = function() {
+		kb += 1;	    
+		if (kb > curval) {
+			kb = curval;  
+		}
+		$loader.setProgress(kb / total);
+		$loader.setValue(kb.toString());
+
+		if (kb < curval) {
+			// setTimeout(animateFunc, 16);
+			 stop = requestAnimationFrame(function () {
+			 	animateFunc();
+			 });
+		} 
+	}
+	animateFunc();		
+});
+</script>
+
+</head>
+<body>
+<div class="container-fluid div-b tm-info">
+	<!-- <div class="clearfix">
+		<h4 class="tm-title"><b>风险测评结果</b></h4>
+	</div> -->
+	<div class="row">
+		<form class="form-horizontal">
+			<div id="loader">
+				<!-- <p>测评结果</p>
+				<p class="evaluation-results">积极进取型</p> -->
+			</div>
+			
+		</form>
+
+	</div>
+</div>
+
+  
+</body>
+</html>
