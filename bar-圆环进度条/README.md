@@ -4,7 +4,7 @@
 
 ### 演示地址：
 
-动态效果：[效果演示1](http://wslover.byethost11.com/canvas/bar-%E5%9C%86%E7%8E%AF%E8%BF%9B%E5%BA%A6%E6%9D%A1/index.html)
+动态效果：[效果演示1](http://wslover.byethost11.com/canvas/bar-%E5%9C%86%E7%8E%AF%E8%BF%9B%E5%BA%A6%E6%9D%A1/index1.html)
 <br>
 最终效果：[效果演示2](http://wslover.byethost11.com/canvas/bar-%E5%9C%86%E7%8E%AF%E8%BF%9B%E5%BA%A6%E6%9D%A1/index2.html)
 
